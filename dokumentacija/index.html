@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Dokumentacija</title>
+		<script src="../knjiznice/js/jquery-2.2.3.min.js"></script>
+		<link href="../knjiznice/css/bootstrap.min.css" rel="stylesheet">
+		<script src="../knjiznice/js/bootstrap.min.js"></script>
+		<style>
+			body {padding: 10px;}
+			.btn {margin-top: 10px;}
+			.obvestilo {margin-left:10px;}
+			img {padding-bottom: 10px;}
+		</style>
+	</head>
+	<body>
+		<div class="page-header"><h2>Dokumentacija <small>enostaven primer</small></h2></div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<h4>Primeri uporabe</h4>
+				<p>Naš enostavni primer je sestavljen iz 4 primerov uporabe (PU), ki so prikazani na diagramu primerov uporabe. Podprli smo naslednji skupini funkcionalnosti:
+					<ul>
+						<li>delo z EHR zapisi:<ul>
+							<li><b>kreiranje EHR zapisa</b> za novega bolnika,</li>
+							<li><b>branje EHR zapisa</b> obstoječega bolnika,</li>
+						</ul></li>
+						<li>delo z vitalnimi znaki bolnika:<ul>
+							<li><b>vnašanje</b> meritve <b>vitalnih znakov</b> bolnika,</li>
+							<li><b>pregled</b> meritev <b>vitalnih znakov</b> bolnika.</li>
+						</ul></li>
+					</ul></p>
+					<img src="slike/DPU.png" width="400">
+					<h4>VOPC razredni diagrami</h4>
+					<p>Če pogledamo načrt informacijske rešitve (ki ga bodo morali tudi študenti pripraviti pri 4. DN), je eden izmed pomembnejših diagramov <b>VOPC</b> (razredni diagram sodelujočih razredov oz. angl. View of Participating Classes).</p>
+					<p>Na <b>globalnem VOPC diagramu</b> prikažemo celotno strukturo demo aplikacije, ki je sestavljena iz naslednjih osrednjih komponent:<ul>
+						<li>mejni razred <b>Index</b>, ki je implementiran v obliki datoteke index.html,</li>
+						<li>kontrolni razred <b>Demo</b>, ki je implementiran v obliki datoteke demo.js in</li>
+						<li>mejni razred <b>EhrScapeAPI</b>, ki predstavlja vmesnik (API) do oddaljenega strežnika EhrScape.</li>
+					</ul></p>
+					<img src="slike/VOPC-global.png" width="700" />
+					<p><b>Podrobni VOPC diagram</b> za EhrScape API pa podrobno predstavlja uporabljene funkcionalnosti, ki jih ponuja EhrScape strežnik. Gre za neposredno sliko dokumentacije API vmesnika, ki smo si ga pogledali s pomočjo orodja <b><a href="https://www.ehrscape.com/api-explorer.html">API Explorer</a></b>. Prikazuje funkcionalnosti (način dostopa: GET ali POST), parametre in podatkovni tip odgovora.</p>
+					<img src="slike/VOPC-EhrScape.png" width="800" />
+					<h4>Diagram zaporedja</h4>
+					<p>Če želimo programerju predstaviti dovolj informacij za razvoj željene funkcionalnosti, mu moramo, polega diagrama primerov uporabe in VOPC diagrama, pripraviti tudi diagram zaporedja. V nadaljevanju je pripravljen diagram zaporeda, ki predstavlja realizacijo osnovnega toka dogodkov primera uporabe "<b>Kreiranje EHR zapisa</b> za novega bolnika".</p>
+					<img src="slike/DZ-kreiranje-EHR-zapisa.png" width="700" />
+			</div>
+		</div>
+	</body>
+</html>
